@@ -4,7 +4,7 @@
 # Output: <observed spreadsheet>
 # File format of <observed spreadsheet>:
 # date, time, observed_level, simulated_level (one sheet for sensor)
-# The simulated_level will be created by this file
+# simulated_level column will be created by this software
 
 import matplotlib.pyplot as plt
 import openpyxl
