@@ -1,14 +1,15 @@
-# Programinha que simula o swmm e coloca no excel e compara
-# com o valor real e calcula o nash-sutcliffe
-# entrada: saida.xls e modificado.inp
-# saida: saida.xlsx
-# Formato:
-# data, hora, nivel_real, nivel_simulado
-# a coluna nivel_simulado sera criado pelo run.py
+# SWMM Assessment tool
+# Author: Maria Clara Fava and Narumi Abe
+# Input: <observed spreadsheet> and <swmm file>
+# Output: <observed spreadsheet>
+# File format of <observed spreadsheet>:
+# date, time, observed_level, simulated_level (one sheet for sensor)
+# The simulated_level will be created by this file
 
 import matplotlib.pyplot as plt
 import openpyxl
 import numpy as np
+# https://pypi.python.org/pypi/SWMM5
 from swmm5.swmm5tools import SWMM5Simulation
 import xlrd
 
